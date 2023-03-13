@@ -109,8 +109,8 @@ static void display_flush(lv_disp_drv_t* disp_drv, const lv_area_t* area, lv_col
 void display_init(void) {
     de_lcd_config_t config;
 
-    config.width = 800;
-    config.height = 480;
+    config.width = 480;
+    config.height = 272;
     config.bus_width = DE_LCD_R_6BITS | DE_LCD_G_6BITS | DE_LCD_B_6BITS;
 
     config.pixel_clock_hz = 33000000;

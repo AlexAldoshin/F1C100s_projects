@@ -5,14 +5,14 @@
 BUILDDIR = build
 	
 # toolchain
-TOOLCHAIN    = arm-none-eabi-
+TOOLCHAIN    = /home/alex/embed/toolchains/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-
 CC           = $(TOOLCHAIN)gcc
 CP           = $(TOOLCHAIN)objcopy
 SZ           = $(TOOLCHAIN)size
 AS           = $(TOOLCHAIN)gcc -x assembler-with-cpp
 OPENOCD 	 = openocd
 
-OPENOCD_ADAPTER = interface/ftdi/digilent-hs1.cfg
+OPENOCD_ADAPTER = interface/jlink.cfg
 OPENOCD_OPTS = -f $(OPENOCD_ADAPTER) -f $(PROJROOT)/allwinner_f1c100s.cfg -c "init"
 
 # user specific

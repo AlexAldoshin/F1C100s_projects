@@ -2,6 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "showDevDebugOutput": "raw",
             "type": "cortex-debug",
             "request": "launch",
             "name": "Debug (OpenOCD)",
@@ -10,9 +11,9 @@
             "preLaunchTask": "Build",
             "runToEntryPoint": "main",
             "executable": "./build/lvgl_demo.elf",
-            "device": "F1C100s",
+            "device": "F1C200s",
             "configFiles": [
-                "interface/ftdi/digilent-hs1.cfg",
+                "interface/jlink.cfg",
                 "../../allwinner_f1c100s.cfg"
             ],
         }
