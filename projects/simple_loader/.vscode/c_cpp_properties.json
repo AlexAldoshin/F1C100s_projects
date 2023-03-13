@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "arm",
-            "compilerPath": "arm-none-eabi-gcc",
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
             "intelliSenseMode": "gcc-arm",
             "compileCommands": "./compile_commands.json",
             "configurationProvider": "ms-vscode.cpptools",
